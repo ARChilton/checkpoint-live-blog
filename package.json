@@ -1,0 +1,46 @@
+{
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
+  "version": "1.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "emotion": "^9.1.2",
+    "emotion-server": "^9.1.2",
+    "emotion-theming": "^9.1.2",
+    "eslint-config-prettier": "^2.9.0",
+    "gatsby": "^1.9.247",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-catch-links": "^1.0.19",
+    "gatsby-plugin-emotion": "^1.1.16",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-sitemap": "^1.2.23",
+    "gatsby-source-filesystem": "^1.5.35",
+    "gatsby-transformer-remark": "^1.7.40",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-emotion": "^9.1.2",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint-check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "prettier": "^1.12.0"
+  }
+}
