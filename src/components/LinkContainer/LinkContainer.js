@@ -10,7 +10,7 @@ const LinkContainer = styled('div')`
   padding: 2vh 16px;
   border-bottom: 1px solid #efefef;
   :hover {
-    background-color: ${props => props.theme.color.navActive};
+    border-color: ${props => props.theme.color.navActive};
   }
 `
 
