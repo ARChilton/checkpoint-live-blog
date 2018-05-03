@@ -1,35 +1,41 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
-import { PrimaryH2, LinkP } from '../components/Text/Text'
+import { H1, H2, PrimaryH2, LinkP } from '../components/Text/Text'
 import { BackgroundImg } from '../components/Images/Images'
 import LinkContainer from '../components/LinkContainer/LinkContainer'
-import { HrBottomOnly } from '../components/Hr/Hr';
+// import { HrBottomOnly } from '../components/Hr/Hr';
 
 const IndexPage = ({ data }) => {
   console.log(data)
   return (
     <div>
       <section>
-        <h1 style={{ textAlign: 'center' }}>
+        <H1 style={{ textAlign: 'center' }}>
           Welcome to the {data.site.siteMetadata.title}
-        </h1>
+        </H1>
+        <H2>Latest posts:</H2>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id} className="col-xs-12">
-            <LinkContainer className="col-xs-12">
-              <Link to={node.fields.slug}>
-                <div className="col-xs-2" style={{ height: '100%' }}>
+            <Link to={node.fields.slug}>
+              <LinkContainer>
+                <div
+                  className="col-xs-2"
+                  style={{ height: '100%', minHeight: '100px' }}
+                >
                   {/* {node.frontmatter.featuredImg ? ( */}
-                  <BackgroundImg src={node.frontmatter.featuredImg} />
+                  <BackgroundImg
+                    src={node.frontmatter.featuredImg}
+                    style={{ height: '100%', minHeight: '100px' }}
+                  />
                   {/* ) : null} */}
                 </div>
                 <div className="col-xs-9 col-xs-offset-1">
                   <PrimaryH2>{node.frontmatter.title}</PrimaryH2>
                   <LinkP>{node.excerpt}</LinkP>
                 </div>
-              </Link>
-            </LinkContainer>
-
+              </LinkContainer>
+            </Link>
           </div>
         ))}
       </section>
