@@ -6,7 +6,7 @@ export default {
     text: '#000',
   },
   font: {
-    // fontFamily: 'Helvetica Neue",Helvetica,Arial,sans-serif',
-    fontFamily: 'Arial',
+    fontFamily:
+      'Roboto,Noto,sans-serif,-apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue',
   },
 }
