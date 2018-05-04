@@ -259,15 +259,18 @@ To log into Checkpoint Live you need a username and password provided to you by 
   </table>
 </div>
 
-You can follow the instructions in the email or follow this tutorial.
+You can follow the instructions in the email or continue to follow this tutorial.
 
 Everyone attending the event uses the same login details to access Checkpoint Live. For example the email above states that the username is: **exampleUser** and the password is: **0A0T9g**
 
-You enter this information here:
+You enter this information into the Checkpoint Live homepage.
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+    <img  src="https://github.com/ARChilton/checkpoint-live-blog/blob/Develop/src/img/log-in-screen.png?raw=true" alt="Checkpoint Live log in screen"></img>
+  </div>
+</div>
 
-![Image of the checkpoint live log in screen]
-
-
+#Information about login page
 
 ## How to select your checkpoint or base
 <a name="selectingCheckpoint"></a>
