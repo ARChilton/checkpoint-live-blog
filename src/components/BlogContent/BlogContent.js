@@ -10,6 +10,7 @@ const BlogContent = styled('div')`
 
   img {
     margin: auto;
+    width: 100%;
   }
 `
 
