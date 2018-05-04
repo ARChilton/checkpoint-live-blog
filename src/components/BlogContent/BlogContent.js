@@ -1,7 +1,7 @@
 import styled from 'react-emotion'
 
 const BlogContent = styled('div')`
-  width: 1000px;
+  max-width: 1000px;
   margin: auto;
 `
 
