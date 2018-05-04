@@ -3,6 +3,7 @@ title: "How to use Checkpoint Live"
 date: "2018-05-03"
 img: 'https://checkpointlive.com/img/largeLogo.svg'
 description: 'How to use Checkpoint Live, the event management service for checkpoint based events'
+tags: ["Tutorial","How to guide"]
 ---
 
 This tutorial explains how to log into Checkpoint Live, what you will be presented with once you have logged in and how you enter information into the event.
