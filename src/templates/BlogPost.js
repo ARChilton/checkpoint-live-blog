@@ -1,15 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ReactHelmet from 'react-helmet'
+import Helmet from '../components/Helmet/Helmet'
+import { H1 } from '../components/Text/Text'
+import BlogContent from '../components/BlogContent/BlogContent'
 
 const BlogPost = ({ data }) => {
   console.log(data)
   const post = data.markdownRemark
   return (
     <div>
-      <ReactHelmet title={post.frontmatter.title} />
-      <h1>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <Helmet post={post} />
+      <BlogContent>
+        <H1 style={{ textAlign: 'center' }}>{post.frontmatter.title}</H1>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </BlogContent>
     </div>
   )
 }
@@ -24,6 +28,8 @@ export const query = graphql`
       html
       frontmatter {
         title
+        description
+        img
       }
     }
   }
