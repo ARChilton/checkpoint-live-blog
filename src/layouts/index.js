@@ -6,7 +6,8 @@ import theme from '../css/theme'
 // import Header from '../components/header'
 import NavBar from '../components/NavBar/NavBar'
 import '../css/bootstrap.css'
-import './index.css'
+// import '../css/index.css'
+import '../css/custom-css.css'
 import Page from '../components/Page/Page'
 
 const Layout = ({ children, data }) => (

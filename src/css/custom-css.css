@@ -1,0 +1,69 @@
+html {
+    font-size:16px;
+        -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+a {
+  color: #FF9100;
+}
+
+@-webkit-keyframes chkpt{
+    10% {
+        fill:#7BC82C;
+    }
+    20% {
+        fill:#000;
+    }
+}
+
+@keyframes chkpt{
+    10% {
+        fill:#7BC82C;
+    }
+    20% {
+        fill:#000;
+    }
+
+}
+
+@-webkit-keyframes admin{
+    12%, 42% {
+        fill:#7BC82C;
+    }
+    32%, 62% {
+        fill:#000;
+    }
+}
+
+@keyframes admin{
+    10%, 25%,  40%{
+        fill:#7BC82C;
+    }
+    15%,  30%, 50% {
+        fill:#000;
+    }
+
+}
+
+#whatIsCheckpointLive .chkptAnimation{
+    animation-name:chkpt;
+    animation-duration: 10s;
+    animation-delay: 8s;    
+    animation-iteration-count: infinite;
+}
+
+#whatIsCheckpointLive #chkpt1-in, #whatIsCheckpointLive #chkpt1-device{
+animation-delay: 2s;
+}
+#whatIsCheckpointLive #chkpt2-in, #whatIsCheckpointLive #chkpt2-device{
+animation-delay: 3.5s;
+}
+#whatIsCheckpointLive #chkpt3-in, #whatIsCheckpointLive #chkpt3-device{
+animation-delay: 5s;
+}
+#whatIsCheckpointLive #admin-out{
+animation-name:admin;
+animation-delay: 2.1s;
+}

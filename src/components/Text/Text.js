@@ -66,6 +66,7 @@ export const H6 = styled('h6')`
 export const P = styled('p')`
   font-family: ${props => props.theme.font.fontFamily};
   margin: 1rem 0px;
+
   color: ${props => props.color || props.theme.color.text || 'inherit'};
 `
 
