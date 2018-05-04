@@ -7,6 +7,7 @@ import theme from '../css/theme'
 import NavBar from '../components/NavBar/NavBar'
 import '../css/bootstrap.css'
 import './index.css'
+import Page from '../components/Page/Page'
 
 const Layout = ({ children, data }) => (
   <ThemeProvider theme={theme}>
@@ -16,22 +17,18 @@ const Layout = ({ children, data }) => (
         titleTemplate={`%s | ${data.site.siteMetadata.title}`}
         // title={data.site.siteMetadata.title}
         meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
+          { name: 'fb:app_id', content: '223113445127689' },
+          { name: 'description', content: 'The blog for Checkpoint Live' },
+          {
+            name: 'keywords',
+            content:
+              'event management, hikes, races, incident hike, checkpoint, base, competition, monitoring, event, scouts, guides',
+          },
         ]}
       />
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <NavBar />
-      <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 960,
-          padding: '0px 1.0875rem 1.45rem',
-          paddingTop: 0,
-        }}
-      >
-        {children()}
-      </div>
+      <Page>{children()}</Page>
     </div>
   </ThemeProvider>
 )

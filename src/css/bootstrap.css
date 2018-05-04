@@ -52,7 +52,7 @@ audio:not([controls]) {
 }
 
 [hidden],
-template {
+tremplate {
     display: none
 }
 
@@ -78,11 +78,6 @@ dfn {
     font-style: italic
 }
 
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0
-}
-
 mark {
     background: #ff0;
     color: #000
@@ -101,11 +96,11 @@ sup {
 }
 
 sup {
-    top: -0.5em
+    top: -0.5rem
 }
 
 sub {
-    bottom: -0.25em
+    bottom: -0.25rem
 }
 
 img {
@@ -117,7 +112,7 @@ svg:not(:root) {
 }
 
 figure {
-    margin: 1em 40px
+    margin: 1rrem 40px
 }
 
 hr {
@@ -136,7 +131,7 @@ kbd,
 pre,
 samp {
     font-family: monospace, monospace;
-    font-size: 1em
+    font-size: 1rem
 }
 
 button,
@@ -209,7 +204,7 @@ input[type="search"]::-webkit-search-decoration {
 fieldset {
     border: 1px solid #c0c0c0;
     margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em
+    padding: 0.35rem 0.625rem 0.75rem
 }
 
 legend {
@@ -285,7 +280,7 @@ img {
 .img-responsive {
     display: block;
     max-width: 100%;
-    height: auto
+    height: auto;
 }
 
 .img-rounded {
@@ -303,7 +298,7 @@ img {
     transition: all .2s ease-in-out;
     display: inline-block;
     max-width: 100%;
-    height: auto
+    height: auto;
 }
 
 .img-circle {

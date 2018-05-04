@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { cx } from 'react-emotion'
-import Link from 'gatsby-link'
+import Link from '../../Link/Link'
 import theme from '../../../css/theme'
 
 const activeStyle = {
