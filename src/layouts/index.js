@@ -17,8 +17,13 @@ const Layout = ({ children, data }) => (
         titleTemplate={`%s | ${data.site.siteMetadata.title}`}
         // title={data.site.siteMetadata.title}
         meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
+          { name: 'fb:app_id', content: '223113445127689' },
+          { name: 'description', content: 'The blog for Checkpoint Live' },
+          {
+            name: 'keywords',
+            content:
+              'event management, hikes, races, incident hike, checkpoint, base, competition, monitoring, event, scouts, guides',
+          },
         ]}
       />
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
