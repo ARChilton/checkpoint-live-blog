@@ -272,12 +272,28 @@ You enter this information into the Checkpoint Live homepage.
   </div>
 </div>
 
-#Information about login page
-
 ## How to select your checkpoint or base
 <a name="selectingCheckpoint"></a>
 
+ The next page you will see is your event's homepage. It will look something like this:
+
+The first thing to do is enter your name in the name field. Your name is attributed to every log entry you create in Checkpoint Live. Allowing the administrative team to know not only where was a participant/team last seen but by whom.
+
+Next you select your checkpoint. This is achieved in one of two ways, dependant on the security for the event.
+
+You might see a drop-down list of checkpoints. In which case select your checkpoint and click 'Go to checkpoint'. Otherwise you will see a pass-code field. Here you enter the pass-code given to you by the event organisers. If you received an email like the one above you will find the pass-code in there too. In our example the pass-code is: **sheep**.
+
+(_Note: This pass-code is case sensitive_)
+
+![No passcode image of the Checkpoint Live event's homepage] ![Passcode entry for Checkpoint Live's event homepage]
+
 ## How to enter information into Checkpoint Live
 <a name="enteringInformation"></a>
+
+Having selected your checkpoint/base. You will see a simple form to enter whenever a participant/team comes to your checkpoint.
+
+This might vary dependant on what information your event's admin team need to keep track of. The example below shows every field you might see.
+
+![Checkpoint page to capture information about the participants seen, to relay this information to the administrative team for the event.]
 
 
