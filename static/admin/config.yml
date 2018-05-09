@@ -1,0 +1,25 @@
+backend:
+  name: github
+  base_url: https://checkpointlive.com # base url to your site
+  auth_endpoint: app/auth # from the route of the server to your server endpoint if this is missing default is /auth
+  site_domain: checkpointlive.com # domain name
+  repo: ARChilton/checkpoint-live-blog # Path to your Github repository
+
+media_folder: static/assets
+
+publish_mode: editorial_workflow
+
+display_url: https://checkpointlive.com/blog
+
+collections:
+  - name: blog
+    label: Blog Posts
+    folder: src/pages
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "BlogPost"}
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: body, label: Post Body, widget: markdown}

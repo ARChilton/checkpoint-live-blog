@@ -9,22 +9,23 @@ const Link = ({ children, to, href, ...other }) => {
   const internal = /^\/(?!\/)/.test(to)
 
   // Use gatsby-link for internal links, and <a> for others
-  if (internal) {
+  if (!internal) {
+    const { exact, activeStyle, ...safeProps } = other
     return (
-      <GatsbyLink to={to} {...other}>
+      <a href={to} {...safeProps}>
         {children}
-      </GatsbyLink>
+      </a>
     )
   }
   return (
-    <a href={to} {...other}>
+    <GatsbyLink to={to} {...other}>
       {children}
-    </a>
+    </GatsbyLink>
   )
 }
 
 Link.propTypes = {
-  children: PropTypes.number.isRequired,
+  children: PropTypes.node.isRequired,
   to: PropTypes.string,
   href: PropTypes.string,
 }

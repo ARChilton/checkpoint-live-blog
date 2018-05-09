@@ -4,6 +4,7 @@ date: "2018-05-03"
 img: 'https://checkpointlive.com/img/largeLogo.svg'
 description: 'How to use Checkpoint Live. The event management service for checkpoint based events'
 tags: ["Tutorial","How to guide"]
+templateKey: BlogPost
 ---
 
 This tutorial explains basics for you to get started with Checkpoint Live.
