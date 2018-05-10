@@ -3,11 +3,10 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { ThemeProvider } from 'emotion-theming'
 import theme from '../css/theme'
-// import Header from '../components/header'
+import Bootstrap from '../components/Bootstrap/Bootstrap'
+
 import NavBar from '../components/NavBar/NavBar'
-import '../css/bootstrap.css'
-// import '../css/index.css'
-import '../css/custom-css.css'
+
 import Page from '../components/Page/Page'
 
 const Layout = ({ children, data }) => (
@@ -16,7 +15,6 @@ const Layout = ({ children, data }) => (
       <Helmet
         defaultTitle={data.site.siteMetadata.title}
         titleTemplate={`%s | ${data.site.siteMetadata.title}`}
-        // title={data.site.siteMetadata.title}
         meta={[
           { name: 'fb:app_id', content: '223113445127689' },
           { name: 'description', content: 'The blog for Checkpoint Live' },
@@ -27,9 +25,10 @@ const Layout = ({ children, data }) => (
           },
         ]}
       />
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <NavBar />
-      <Page>{children()}</Page>
+      <Bootstrap>
+        <NavBar />
+        <Page>{children()}</Page>
+      </Bootstrap>
     </div>
   </ThemeProvider>
 )
