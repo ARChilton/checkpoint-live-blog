@@ -37,10 +37,13 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-        
+      
+      - run:
+        command: yarn run build  
       # run tests!
       # - run: yarn test
   deploy:
+    machine:
     steps:  
      - run:
         command: |
