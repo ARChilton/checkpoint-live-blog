@@ -76,6 +76,7 @@ const Page = styled('div')`
   img {
     margin: auto;
     width: 100%;
+    max-width: 100%;
   }
   .row {
     margin: 5rem 0px;

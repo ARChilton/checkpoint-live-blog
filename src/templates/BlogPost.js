@@ -24,15 +24,18 @@ export const BlogPostTemplate = ({
       <BlogContent>
         <H1 style={{ textAlign: 'center' }}>{title}</H1>
         <TagListContainer>
-          {tags.map(tag => (
-            <Link
-              linksOn={linksOn}
-              key={`${tag} tag`}
-              to={`/tags/${kebabCase(tag)}/`}
-            >
-              <TagContainer>{kebabCase(tag)}</TagContainer>
-            </Link>
-          ))}
+          {tags.map(
+            tag =>
+              tag !== '' ? (
+                <Link
+                  linksOn={linksOn}
+                  key={`${tag} tag`}
+                  to={`/tags/${kebabCase(tag)}/`}
+                >
+                  <TagContainer>{kebabCase(tag)}</TagContainer>
+                </Link>
+              ) : null
+          )}
         </TagListContainer>
         <PostContent content={content} />
       </BlogContent>

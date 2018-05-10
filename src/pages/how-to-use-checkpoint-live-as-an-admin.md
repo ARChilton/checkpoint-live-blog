@@ -8,5 +8,6 @@ tags:
   - Tutorial
   - How to guide
   - Admin
+templateKey: BlogPost
 ---
 
