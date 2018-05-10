@@ -39,13 +39,14 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       
       - run:
-        command: yarn run build  
+          command: yarn run build  
       # run tests!
       # - run: yarn test
   deploy:
     machine:
+      enabled: true
     steps:  
-     - run:
+    - run:
         command: |
               git push -q https://${GITHUB_PERSONAL_TOKEN}@github.com/ARChilton/checkpoint-live-blog.git master
 
