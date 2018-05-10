@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Adam Chilton",
   "dependencies": {
-    "emotion": "^9.1.2",
+    "emotion": "^9.1.3",
     "emotion-server": "^9.1.3",
     "emotion-theming": "^9.1.2",
     "eslint-config-prettier": "^2.9.0",
