@@ -11,7 +11,6 @@ const activeStyle = {
 const NavBarOption = ({ className, label, to, numberOfNavs }) => (
   <Link
     to={to}
-    exact
     activeStyle={activeStyle}
     className={cx(
       className,
