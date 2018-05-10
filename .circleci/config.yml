@@ -5,6 +5,11 @@
 version: 2
 jobs:
   build:
+    filters:
+      branches:
+        only:
+          - master
+      
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
@@ -32,8 +37,28 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-        
+      
+      - run:
+          command: yarn run build  
       # run tests!
       # - run: yarn test
+  deploy:
+    machine:
+      enabled: true
+    steps:  
+    - run:
+        command: |
+              git push -q https://${GITHUB_PERSONAL_TOKEN}@github.com/ARChilton/checkpoint-live-blog.git master
 
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
 
