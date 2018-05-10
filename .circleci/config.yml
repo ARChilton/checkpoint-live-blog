@@ -9,7 +9,7 @@ jobs:
       branches:
         only:
           - master
-          - Develop
+      
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
