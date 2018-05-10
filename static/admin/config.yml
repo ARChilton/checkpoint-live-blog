@@ -12,14 +12,16 @@ publish_mode: editorial_workflow
 display_url: https://checkpointlive.com/blog
 
 collections:
-  - name: blog
-    label: Blog Posts
-    folder: src/pages
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/pages"
     create: true
     extension: md
     format: frontmatter
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "BlogPost"}
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: body, label: Post Body, widget: markdown}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Body", name: "body", widget: "markdown"}
