@@ -5,7 +5,7 @@ backend:
   site_domain: checkpointlive.com # domain name
   repo: ARChilton/checkpoint-live-blog # Path to your Github repository
 
-media_folder: static/assets
+media_folder: static/img
 
 publish_mode: editorial_workflow
 
@@ -23,5 +23,6 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["blog-post"]}
+      - {label: "Feature Image", name: "featureImg", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
