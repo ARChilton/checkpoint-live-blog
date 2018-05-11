@@ -25,8 +25,7 @@ jobs:
       - checkout
 
       - run:
-          command: |
-            echo show files
+          command: |            
             ls
             cd src
             ls
@@ -50,8 +49,8 @@ jobs:
     # - run:
     #     command: npm run test
 
-      - run:
-          command: npm run build 
+      # - run:
+      #     command: npm run build 
 
       - add_ssh_keys:
           fingerprints:
@@ -59,9 +58,8 @@ jobs:
 
       - deploy:
           command: |
-            echo copy to server
             ls
-            scp public/"*" ${USER}@${DOMAIN}:/${DIR_PATH}
+            scp src/index.html ${USER}@${DOMAIN}:/${DIR_PATH}
  
 
 # workflows:
