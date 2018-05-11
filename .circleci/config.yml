@@ -33,18 +33,18 @@ jobs:
 
 
       # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+      # - restore_cache:
+      #     keys:
+      #     - v1-dependencies-{{ checksum "package.json" }}
+      #     # fallback to using the latest cache if no exact match is found
+      #     - v1-dependencies-
 
-      - run: npm install
+      # - run: npm install
 
-      - save_cache:
-          key: v1-dependencies-{{ checksum "package.json" }}
-          paths:
-            - node_modules
+      # - save_cache:
+      #     key: v1-dependencies-{{ checksum "package.json" }}
+      #     paths:
+      #       - node_modules
       
     # - run:
     #     command: npm run test
@@ -56,7 +56,7 @@ jobs:
           fingerprints:
             - "14:9e:b9:4a:9d:3e:10:b2:15:8b:b4:2c:6f:ff:80:27"
 
-      - deploy:
+      - run:
           command: |
             ls
             scp src/index.html ${USER}@${DOMAIN}:/${DIR_PATH}
