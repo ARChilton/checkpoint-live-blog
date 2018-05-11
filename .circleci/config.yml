@@ -61,7 +61,9 @@ jobs:
             ls
             cd public
             ls
-            rsync -r ${USER}@${DOMAIN}:/${DIR_PATH} -R
+            cd ../
+            echo copying now
+            rsync public/* ${USER}@${DOMAIN}:/${DIR_PATH} -R -r --stats
             # scp * ${USER}@${DOMAIN}:/${DIR_PATH}
  
 
