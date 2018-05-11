@@ -57,8 +57,7 @@ jobs:
           command: |
             ssh ${USER}@${DOMAIN} "rm -rf /${DIR_PATH}/*"
       - run:
-          command: |
-                       
+          command: |                       
             echo copying now
             rsync public ${USER}@${DOMAIN}:/${DIR_PATH} -R -r --stats
             # scp * ${USER}@${DOMAIN}:/${DIR_PATH}
