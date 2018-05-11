@@ -56,7 +56,7 @@ jobs:
             ls
             ssh-keyscan checkpointlive.com >> ~/.ssh/known_hosts
             # scp * ${USER}@${DOMAIN}:/${DIR_PATH}
-            rsync -r ${USER}@${DOMAIN}:/${DIR_PATH} --delete-after --force -R
+            rsync -r ${USER}@${DOMAIN}:/${DIR_PATH} --delete --force -R
  
 
 # workflows:
