@@ -24,48 +24,55 @@ jobs:
     steps:
       - checkout
 
+      run:
+        command: |
+        echo show files
+          ls
+
       # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+      # - restore_cache:
+      #     keys:
+      #     - v1-dependencies-{{ checksum "package.json" }}
+      #     # fallback to using the latest cache if no exact match is found
+      #     - v1-dependencies-
 
-      - run: npm install
+      # - run: npm install
 
-      - save_cache:
-          key: v1-dependencies-{{ checksum "package.json" }}
-          paths:
-            - node_modules
+      # - save_cache:
+      #     key: v1-dependencies-{{ checksum "package.json" }}
+      #     paths:
+      #       - node_modules
       
-      - run:
-          command: npm run build  
+      # - run:
+      #     command: npm run build  
       # run tests!
       # - run: yarn test
-  deploy:
-    machine:
-      enabled: true
-    steps: 
-    - add_ssh_keys:
-        fingerprints:
-          - "4d:3f:1f:3e:d5:fa:de:08:20:1d:6d:f6:02:9e:1f:90" 
-    - run:
-        command: |
-              scp "${BUILD_FOLDER}/*" ${USER}@${DOMAIN}:/${DIR_PATH}
+  # deploy:
+  #   machine:
+  #     enabled: true
+  #   steps: 
+  #   - add_ssh_keys:
+  #       fingerprints:
+  #         - "4d:3f:1f:3e:d5:fa:de:08:20:1d:6d:f6:02:9e:1f:90" 
+  #   - run:
+  #       command: |
+  #             echo Building
+  #             ls
+  #             scp "${BUILD_FOLDER}/*" ${USER}@${DOMAIN}:/${DIR_PATH}
 
 workflows:
   version: 2
   build-and-deploy:
     jobs:
       - build:
-          filters:
-            branches:
-              only: master
+      #     filters:
+      #       branches:
+      #         only: master
             
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
+      # - deploy:
+      #     requires:
+      #       - build
+      #     filters:
+      #       branches:
+      #         only: master
 
