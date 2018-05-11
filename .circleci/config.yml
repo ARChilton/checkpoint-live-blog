@@ -51,7 +51,7 @@ jobs:
           command: npm run build 
 
       - run:
-        command: |
+          command: |
           echo built now showing public if it is there
           ls
           
