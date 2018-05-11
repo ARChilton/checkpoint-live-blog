@@ -47,43 +47,36 @@ jobs:
           paths:
             - node_modules
       
+    # - run:
+    #     command: npm run test
+
       - run:
           command: npm run build 
 
-      - run:
-          command: |
-            echo built now showing public if it is there
-            ls
-          
+      - add_ssh_keys:
+          fingerprints:
+            - "4d:3f:1f:3e:d5:fa:de:08:20:1d:6d:f6:02:9e:1f:90"
 
-      # run tests!
-      # - run: yarn test
-  deploy:
-    machine:
-      enabled: true
-    steps: 
-    - add_ssh_keys:
-        fingerprints:
-          - "4d:3f:1f:3e:d5:fa:de:08:20:1d:6d:f6:02:9e:1f:90" 
-    - run:
-        command: |
-              echo Copy to server
-              ls
-              scp public/"*" ${USER}@${DOMAIN}:/${DIR_PATH}
-
-workflows:
-  version: 2
-  build-and-deploy:
-    jobs:
-      - build:
-          filters:
-            branches:
-              only: master
-            
       - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
+          command: |
+            echo copy to server
+            ls
+            scp public/"*" ${USER}@${DOMAIN}:/${DIR_PATH}
+ 
+
+# workflows:
+#   version: 2
+#   build-and-deploy:
+#     jobs:
+#       - build:
+#           filters:
+#             branches:
+#               only: master
+            
+#       - deploy:
+#           requires:
+#             - build
+#           filters:
+#             branches:
+#               only: master
 
