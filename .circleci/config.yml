@@ -53,17 +53,14 @@ jobs:
           command: |            
             ssh-keyscan checkpointlive.com >> ~/.ssh/known_hosts
             
-      # - run:
-      #     command: |
-      #       ssh ${USER}@${DOMAIN} "rm -rf /${DIR_PATH}/*"
       - run:
           command: |
-            ls
-            cd public
-            ls
-            cd ../
+            ssh ${USER}@${DOMAIN} "rm -rf /${DIR_PATH}/*"
+      - run:
+          command: |
+                       
             echo copying now
-            rsync public/* ${USER}@${DOMAIN}:/${DIR_PATH} -R -r --stats
+            rsync public ${USER}@${DOMAIN}:/${DIR_PATH} -R -r --stats
             # scp * ${USER}@${DOMAIN}:/${DIR_PATH}
  
 
