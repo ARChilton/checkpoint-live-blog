@@ -59,6 +59,7 @@ jobs:
       - run:
           command: |
             ls
+            ssh-keyscan checkpointlive.com >> ~/.ssh/known_hosts
             scp src/index.html ${USER}@${DOMAIN}:/${DIR_PATH}
  
 
