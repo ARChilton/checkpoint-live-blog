@@ -54,6 +54,7 @@ jobs:
         command: |
           echo built now showing public if it is there
           ls
+          
 
       # run tests!
       # - run: yarn test
@@ -66,18 +67,18 @@ jobs:
           - "4d:3f:1f:3e:d5:fa:de:08:20:1d:6d:f6:02:9e:1f:90" 
     - run:
         command: |
-              echo copying to server
+              echo Copy to server
               ls
-              cd public
-              ls
-
-              scp /public/"*" ${USER}@${DOMAIN}:/${DIR_PATH}
+              scp public/"*" ${USER}@${DOMAIN}:/${DIR_PATH}
 
 workflows:
   version: 2
   build-and-deploy:
     jobs:
       - build:
+          filters:
+            branches:
+              only: master
             
       - deploy:
           requires:
