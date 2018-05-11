@@ -50,14 +50,19 @@ jobs:
             - "14:9e:b9:4a:9d:3e:10:b2:15:8b:b4:2c:6f:ff:80:27"
 
       - run:
+          command: |            
+            ssh-keyscan checkpointlive.com >> ~/.ssh/known_hosts
+            
+      - run:
+          command: |
+            ssh ${USER}@${DOMAIN} "rm -rf /${DIR_PATH}/*"
+      - run:
           command: |
             ls
-            cd src/pages
+            cd public
             ls
-            ssh-keyscan checkpointlive.com >> ~/.ssh/known_hosts
+            rsync -r ${USER}@${DOMAIN}:/${DIR_PATH} -R
             # scp * ${USER}@${DOMAIN}:/${DIR_PATH}
-            ssh ${USER}@${DOMAIN} "rm -rf /${DIR_PATH}/*"
-            rsync -r ${USER}@${DOMAIN}:/${DIR_PATH} --del --force -R
  
 
 # workflows:
