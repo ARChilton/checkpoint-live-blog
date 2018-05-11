@@ -61,8 +61,10 @@ jobs:
             ls
             cd src
             ls
+            cd pages 
+            ls
             ssh-keyscan checkpointlive.com >> ~/.ssh/known_hosts
-            scp pages/index.html ${USER}@${DOMAIN}:/${DIR_PATH}
+            scp src/pages/index.html ${USER}@${DOMAIN}:/${DIR_PATH}
  
 
 # workflows:
