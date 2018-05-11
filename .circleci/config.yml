@@ -53,9 +53,9 @@ jobs:
           command: |            
             ssh-keyscan checkpointlive.com >> ~/.ssh/known_hosts
             
-      - run:
-          command: |
-            ssh ${USER}@${DOMAIN} "rm -rf /${DIR_PATH}/*"
+      # - run:
+      #     command: |
+      #       ssh ${USER}@${DOMAIN} "rm -rf /${DIR_PATH}/*"
       - run:
           command: |
             ls
