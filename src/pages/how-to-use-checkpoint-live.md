@@ -303,7 +303,15 @@ Having selected your checkpoint/base. You will see a simple form to enter whenev
 
 This might vary dependant on what information your event's admin team need to keep track of. The example below shows every field you might see.
 
-!\[Checkpoint page to capture information about the participants seen, to relay this information to the administrative team for the event.]
+<div class="row">
+
+<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
+
+ <img  src="blob:https://checkpointlive.com/b2e3d44b-48af-4fc7-973e-850a5ca1c43b" alt="Checkpoint Live checkpoint screen for entering data about participants during an event."></img>
+
+</div>
+
+</div>
 
 ### Fields you might see
 
@@ -318,19 +326,23 @@ If your event has an entity other than teams participating for example 'riders',
 This identifies if a participant or team has arrived at the checkpoint in the wrong order for their route. If the checkbox is checked then the team is **off their allotted route**.
 
 #### Time in
+
 This is the time the participant or team arrived at the checkpoint.
 
 _If this field is left blank the time when the log is submitted will be used instead._
 
 #### Wait time
+
 This is the time the participants spent waiting at the checkpoint before they could take part in the activity there.
 
 #### Time out
+
 This is the time the participant or team left the checkpoint.
 
 _If this field is left blank the time when the log is submitted will be used instead._
 
 #### Total Score
+
 The score for the participant or team received for the activity available at the checkpoint or base.
 
 _If you don't see this field then there is no score available at that checkpoint._
