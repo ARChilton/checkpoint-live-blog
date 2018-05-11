@@ -33,7 +33,7 @@ jobs:
             cd ../
 
 
-      Download and cache dependencies
+      # Download and cache dependencies
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
