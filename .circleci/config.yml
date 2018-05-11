@@ -52,8 +52,8 @@ jobs:
 
       - run:
           command: |
-          echo built now showing public if it is there
-          ls
+            echo built now showing public if it is there
+            ls
           
 
       # run tests!
