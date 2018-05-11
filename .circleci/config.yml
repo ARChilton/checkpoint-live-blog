@@ -60,11 +60,11 @@ jobs:
   #             ls
   #             scp "${BUILD_FOLDER}/*" ${USER}@${DOMAIN}:/${DIR_PATH}
 
-workflows:
-  version: 2
-  build-and-deploy:
-    jobs:
-      - build:
+# workflows:
+#   version: 2
+#   build-and-deploy:
+#     jobs:
+#       - build:
       #     filters:
       #       branches:
       #         only: master
