@@ -51,7 +51,7 @@ jobs:
           - "4d:3f:1f:3e:d5:fa:de:08:20:1d:6d:f6:02:9e:1f:90" 
     - run:
         command: |
-              scp "${BUILD_FOLDER}/*" ${USER}@${DOMAIN} cd ${DIR_PATH}
+              scp "${BUILD_FOLDER}/*" ${USER}@${DOMAIN}:/${DIR_PATH}
 
 workflows:
   version: 2
