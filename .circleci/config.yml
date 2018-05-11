@@ -28,23 +28,35 @@ jobs:
           command: |
             echo show files
             ls
+            cd src
+            ls
+            cd ../
 
-      # Download and cache dependencies
-      # - restore_cache:
-      #     keys:
-      #     - v1-dependencies-{{ checksum "package.json" }}
-      #     # fallback to using the latest cache if no exact match is found
-      #     - v1-dependencies-
 
-      # - run: npm install
+      Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
 
-      # - save_cache:
-      #     key: v1-dependencies-{{ checksum "package.json" }}
-      #     paths:
-      #       - node_modules
+      - run: npm install
+
+      - save_cache:
+          key: v1-dependencies-{{ checksum "package.json" }}
+          paths:
+            - node_modules
       
-      # - run:
-      #     command: npm run build  
+      - run:
+          command: npm run build 
+
+      -run:
+        command: |
+          echo built now showing public if it is there
+          ls
+          cd public
+          ls
+
       # run tests!
       # - run: yarn test
   # deploy:
