@@ -12,7 +12,8 @@ jobs:
       
     docker:
       # specify the version you desire here
-      - image: circleci/node:7.10
+      #- image: circleci/node:7.10
+      - image: rohara/node:6.10.3-rsync
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -25,24 +26,24 @@ jobs:
       - checkout
 
       # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+      # - restore_cache:
+      #     keys:
+      #     - v1-dependencies-{{ checksum "package.json" }}
+      #     # fallback to using the latest cache if no exact match is found
+      #     - v1-dependencies-
 
-      - run: npm install
+      # - run: npm install
 
-      - save_cache:
-          key: v1-dependencies-{{ checksum "package.json" }}
-          paths:
-            - node_modules
+      # - save_cache:
+      #     key: v1-dependencies-{{ checksum "package.json" }}
+      #     paths:
+      #       - node_modules
       
     # - run:
     #     command: npm run test
 
-      - run:
-          command: npm run build 
+      # - run:
+      #     command: npm run build 
 
       - add_ssh_keys:
           fingerprints:
@@ -51,10 +52,11 @@ jobs:
       - run:
           command: |
             ls
-            cd public
+            cd src/pages
             ls
             ssh-keyscan checkpointlive.com >> ~/.ssh/known_hosts
-            scp * ${USER}@${DOMAIN}:/${DIR_PATH}
+            # scp * ${USER}@${DOMAIN}:/${DIR_PATH}
+            rsync * ${USER}@${DOMAIN}:/${DIR_PATH} --delete-after --force -R
  
 
 # workflows:
