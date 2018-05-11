@@ -31,24 +31,27 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: yarn install
+      - run: npm install
 
       - save_cache:
+          key: v1-dependencies-{{ checksum "package.json" }}
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
       
       - run:
-          command: yarn run build  
+          command: npm run build  
       # run tests!
       # - run: yarn test
   deploy:
     machine:
       enabled: true
-    steps:  
+    steps: 
+    - add_ssh_keys:
+        fingerprints:
+          - "4d:3f:1f:3e:d5:fa:de:08:20:1d:6d:f6:02:9e:1f:90" 
     - run:
         command: |
-              git push -q https://${GITHUB_PERSONAL_TOKEN}@github.com/ARChilton/checkpoint-live-blog.git master
+              scp "${BUILD_FOLDER}/*" ${USER}@${DOMAIN} cd ${DIR_PATH}
 
 workflows:
   version: 2
