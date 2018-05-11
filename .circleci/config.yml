@@ -24,33 +24,25 @@ jobs:
     steps:
       - checkout
 
-      - run:
-          command: |            
-            ls
-            cd src
-            ls
-            cd ../
-
-
       # Download and cache dependencies
-      # - restore_cache:
-      #     keys:
-      #     - v1-dependencies-{{ checksum "package.json" }}
-      #     # fallback to using the latest cache if no exact match is found
-      #     - v1-dependencies-
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
 
-      # - run: npm install
+      - run: npm install
 
-      # - save_cache:
-      #     key: v1-dependencies-{{ checksum "package.json" }}
-      #     paths:
-      #       - node_modules
+      - save_cache:
+          key: v1-dependencies-{{ checksum "package.json" }}
+          paths:
+            - node_modules
       
     # - run:
     #     command: npm run test
 
-      # - run:
-      #     command: npm run build 
+      - run:
+          command: npm run build 
 
       - add_ssh_keys:
           fingerprints:
@@ -59,12 +51,9 @@ jobs:
       - run:
           command: |
             ls
-            cd src
-            ls
-            cd pages 
-            ls
+            cd public
             ssh-keyscan checkpointlive.com >> ~/.ssh/known_hosts
-            scp * ${USER}@${DOMAIN}:/${DIR_PATH}
+            rsync * ${USER}@${DOMAIN}:/${DIR_PATH} --delete-after --force
  
 
 # workflows:
