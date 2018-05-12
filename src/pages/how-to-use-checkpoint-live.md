@@ -8,7 +8,7 @@ description: >-
 tags:
   - Tutorial
   - How to guide
-img: /static/img/checkpoint-input.png
+img: img/checkpoint-input.png
 ---
 This tutorial explains basics for you to get started with Checkpoint Live.
 
