@@ -6,6 +6,7 @@ backend:
   repo: ARChilton/checkpoint-live-blog # Path to your Github repository
 
 media_folder: static/img
+public_folder: img
 
 publish_mode: editorial_workflow
 
