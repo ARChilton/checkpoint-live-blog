@@ -8,7 +8,7 @@ description: >-
 tags:
   - Tutorial
   - How to guide
-featureImg: /static/img/checkpoint-input.png
+img: /static/img/checkpoint-input.png
 ---
 This tutorial explains basics for you to get started with Checkpoint Live.
 
@@ -309,7 +309,8 @@ This might vary dependant on what information your event's admin team need to ke
 
  <img  src="blob:https://checkpointlive.com/b2e3d44b-48af-4fc7-973e-850a5ca1c43b" alt="Checkpoint Live checkpoint screen for entering data about participants during an event."></img>
 
-</div>
+
+</div>
 
 </div>
 
