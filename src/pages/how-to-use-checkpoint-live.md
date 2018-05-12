@@ -307,8 +307,7 @@ This might vary dependant on what information your event's admin team need to ke
 
 <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
 
- <img  src="blob:https://checkpointlive.com/b2e3d44b-48af-4fc7-973e-850a5ca1c43b" alt="Checkpoint Live checkpoint screen for entering data about participants during an event."></img>
-
+ <img  src="img/checkpoint-input.png" alt="Checkpoint Live checkpoint screen for entering data about participants during an event."></img>
 
 </div>
 
