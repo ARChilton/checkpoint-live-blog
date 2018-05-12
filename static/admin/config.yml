@@ -24,5 +24,5 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Tags", name: "tags", widget: "list", default: ["blog-post"]}
-      - {label: "Feature Image", name: "featureImg", widget: "image"}
+      - {label: "Feature Image", name: "img", widget: "image", default: "https://checkpointlive.com/img/largeLogo.svg"}
       - {label: "Body", name: "body", widget: "markdown"}
