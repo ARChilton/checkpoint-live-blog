@@ -1,23 +1,28 @@
 ---
-title: "How to use Checkpoint Live"
-date: "2018-05-03"
-img: 'https://checkpointlive.com/img/largeLogo.svg'
-description: 'How to use Checkpoint Live. The event management service for checkpoint based events'
-tags: ["Tutorial","How to guide"]
 templateKey: BlogPost
+title: How to use Checkpoint Live
+date: '2018-05-03'
+description: >-
+  How to use Checkpoint Live. The event management service for checkpoint based
+  events
+tags:
+  - Tutorial
+  - How to guide
+featureImg: /static/img/checkpoint-input.png
 ---
-
 This tutorial explains basics for you to get started with Checkpoint Live.
 
 Are you part of the administration team for your event? If yes, please take this [tutorial for specific instructions on the administrator interface](/how-to-use-checkpoint-live-as-an-admin).
 
 ### What is in this tutorial
+
 * [How you fit into the wider system](#widerSystem)
 * [Logging in](#loggingIn)
 * [Selecting your checkpoint](#selectingCheckpoint)
 * [Entering information](#enteringInformation)
 
 ## How you fit into the wider system
+
 <a name="widerSystem"></a>
 Everyone using Checkpoint Live is in communication with each other via their mobile devices. Your role marshalling a checkpoint/base is to record the participants as they arrive and leave your checkpoint/base. If there are points available at your checkpoint/base you will also enter these, as Checkpoint Live will collate the scores input by all checkpoints/bases.
 
@@ -110,10 +115,11 @@ Everyone using Checkpoint Live is in communication with each other via their mob
               </svg>
 </div>
 
-
 ## How to log into Checkpoint Live
+
 <a name="loggingIn"></a>
 To log into Checkpoint Live you need a username and password provided to you by the event organisers. This might come in the form of an email that looks a little bit like this:
+
 <div class="row">
   <div class="m_5308179020243031396content" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;box-sizing:border-box;font-size:14px;max-width:600px;display:block;margin:0 auto;padding:20px">
     <table class="m_5308179020243031396main" width="100%" cellpadding="0" cellspacing="0" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;box-sizing:border-box;font-size:14px;border-radius:3px;background-color:#fff;margin:0;border:1px solid #e9e9e9"
@@ -274,6 +280,7 @@ You enter this information into the Checkpoint Live homepage.
 </div>
 
 ## How to select your checkpoint or base
+
 <a name="selectingCheckpoint"></a>
 
  The next page you will see is your event's homepage. It will look something like this:
@@ -286,15 +293,64 @@ You might see a drop-down list of checkpoints. In which case select your checkpo
 
 (_Note: This pass-code is case sensitive_)
 
-![No passcode image of the Checkpoint Live event's homepage] ![Passcode entry for Checkpoint Live's event homepage]
+!\[No passcode image of the Checkpoint Live event's homepage] !\[Passcode entry for Checkpoint Live's event homepage]
 
 ## How to enter information into Checkpoint Live
+
 <a name="enteringInformation"></a>
 
 Having selected your checkpoint/base. You will see a simple form to enter whenever a participant/team comes to your checkpoint.
 
 This might vary dependant on what information your event's admin team need to keep track of. The example below shows every field you might see.
 
-![Checkpoint page to capture information about the participants seen, to relay this information to the administrative team for the event.]
+<div class="row">
 
+<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
 
+ <img  src="blob:https://checkpointlive.com/b2e3d44b-48af-4fc7-973e-850a5ca1c43b" alt="Checkpoint Live checkpoint screen for entering data about participants during an event."></img>
+
+</div>
+
+</div>
+
+### Fields you might see
+
+#### Team Number (Required)
+
+This is the identifying number for the teams participating.
+
+If your event has an entity other than teams participating for example 'riders', you might see Rider No. instead of Team No.
+
+#### Off Route
+
+This identifies if a participant or team has arrived at the checkpoint in the wrong order for their route. If the checkbox is checked then the team is **off their allotted route**.
+
+#### Time in
+
+This is the time the participant or team arrived at the checkpoint.
+
+_If this field is left blank the time when the log is submitted will be used instead._
+
+#### Wait time
+
+This is the time the participants spent waiting at the checkpoint before they could take part in the activity there.
+
+#### Time out
+
+This is the time the participant or team left the checkpoint.
+
+_If this field is left blank the time when the log is submitted will be used instead._
+
+#### Total Score
+
+The score for the participant or team received for the activity available at the checkpoint or base.
+
+_If you don't see this field then there is no score available at that checkpoint._
+
+Due to the flexibility available in the event set-up, there could be as few fields to enter as just the Team No. This will automate times for the Time in, Time out and Wait fields set to be the time when you press 'Submit'.
+
+### Background Information
+
+The event organising team might request for you to allow use of your device's GPS. If this is the case, the first time this happens the website will ask to utilise your GPS sensor. 
+
+If you allow permission then your location when you press 'Submit' will also be sent along with the data entered. This will happen in the background but provides the admin team more information as they monitor the event.
