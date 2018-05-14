@@ -6,7 +6,7 @@ backend:
   repo: ARChilton/checkpoint-live-blog # Path to your Github repository
 
 media_folder: static/img
-public_folder: img
+public_folder: ../../img
 
 publish_mode: editorial_workflow
 
@@ -23,7 +23,7 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "BlogPost"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Description", name: "description", widget: "text", pattern: ['.{50,300}','A description must be between 50 and 300 characters long']}
       - {label: "Tags", name: "tags", widget: "list", default: ["blog-post"]}
       - {label: "Feature Image", name: "img", widget: "image", default: "https://checkpointlive.com/img/largeLogo.svg"}
       - {label: "Body", name: "body", widget: "markdown"}
