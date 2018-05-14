@@ -9,7 +9,7 @@ tags:
   - all users
 img: 'https://checkpointlive.com/img/largeLogo.svg'
 ---
-This tutorial explains how to log into Checkpoint Live. To do this you do not need to sign up unless you are creating an event. To create an event follow the [Event Organiser Tutorial](/how-to-create-an-event-in-checkpoint-live).
+This tutorial explains how to log into Checkpoint Live. To do this you do not need to sign up unless you are creating an event. To create an event follow the [Event Organiser Tutorial](../how-to-create-an-event-in-checkpoint-live).
 
 <a name="loggingIn"></a>
 To log into Checkpoint Live you need a username and password provided to you by the event organisers. This might come in the form of an email that looks a little bit like this:

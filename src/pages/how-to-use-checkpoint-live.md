@@ -12,7 +12,7 @@ img: img/checkpoint-input.png
 ---
 This tutorial explains basics for you to get started with Checkpoint Live.
 
-Are you part of the administration team for your event? If yes, please take this [tutorial for specific instructions on the administrator interface](/how-to-use-checkpoint-live-as-an-admin).
+Are you part of the administration team for your event? If yes, please take this [tutorial for specific instructions on the administrator interface](../how-to-use-checkpoint-live-as-an-admin).
 
 ### What is in this tutorial
 
@@ -120,7 +120,7 @@ Everyone using Checkpoint Live is in communication with each other via their mob
 
 <a name="selectingCheckpoint"></a>
 
-[Having logged into Checkpoint Live](/how-to-log-into-checkpoint-live), the next page you will see is your event's homepage. It will look something like this:
+[Having logged into Checkpoint Live](../how-to-log-into-checkpoint-live), the next page you will see is your event's homepage. It will look something like this:
 
 The first thing to do is enter your name in the name field. Your name is attributed to every log entry you create in Checkpoint Live. Allowing the administrative team to know not only where was a participant/team last seen but by whom.
 
@@ -144,7 +144,7 @@ This might vary dependant on what information your event's admin team need to ke
 
 <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
 
- <img  src="img/checkpoint-input.png" alt="Checkpoint Live checkpoint screen for entering data about participants during an event."></img>
+ <img  src="../../img/checkpoint-input.png" alt="Checkpoint Live checkpoint screen for entering data about participants during an event."></img>
 
 </div>
 
