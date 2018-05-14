@@ -179,13 +179,13 @@ Having logged in, you will be presented with a screen that looks like this:
 
 <div class="row">
 <div class="col-xs-6">
-<img alt="event homepage with additional security" src="/img/event-homepage.png" />
+<img alt="event homepage with additional security" src="../../img/event-homepage.png" />
 </div>
 <div class="col-xs-6">
 <img alt="event homepage with drop-down checkpoint selection" src="/" />
 </div>
 </div>
 
-To continue learning how to use Checkpoint Live please read this [tutorial on entering information from a checkpoint](/how-to-use-checkpoint-live).
+To continue learning how to use Checkpoint Live please read this [tutorial on entering information from a checkpoint](../how-to-use-checkpoint-live).
 
-Alternatively if you are administrating the event please read the [tutorial on how to use Checkpoint Live as an administrator](/how-to-use-checkpoint-live-as-an-admin).
+Alternatively if you are administrating the event please read the [tutorial on how to use Checkpoint Live as an administrator](../how-to-use-checkpoint-live-as-an-admin).
