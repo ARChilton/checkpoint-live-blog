@@ -4,7 +4,7 @@ title: How to log into Checkpoint Live
 date: '2018-05-14T14:58:47-04:00'
 description: A tutorial to explain how to log into checkpoint live
 tags:
-  - how to
+  - how to guide
   - tutorial
   - all users
 img: 'https://checkpointlive.com/img/largeLogo.svg'
@@ -179,7 +179,7 @@ Having logged in, you will be presented with a screen that looks like this:
 
 <div class="row">
 <div class="col-xs-6">
-<img alt="event homepage with additional security" src="../../img/event-homepage.png" />
+<img alt="event homepage with additional security" src="../img/event-homepage.png" />
 </div>
 <div class="col-xs-6">
 <img alt="event homepage with drop-down checkpoint selection" src="/" />
