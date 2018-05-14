@@ -4,7 +4,7 @@ title: How to log into Checkpoint Live
 date: '2018-05-14T14:58:47-04:00'
 description: A tutorial to explain how to log into checkpoint live
 tags:
-  - how to
+  - how to guide
   - tutorial
   - all users
 img: 'https://checkpointlive.com/img/largeLogo.svg'
