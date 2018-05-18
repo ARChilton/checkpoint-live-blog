@@ -1,13 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 import { ThemeProvider } from 'emotion-theming'
-import theme from '../css/theme'
+import PropTypes from 'prop-types'
+import React from 'react'
+import Helmet from 'react-helmet'
 import Bootstrap from '../components/Bootstrap/Bootstrap'
-
 import NavBar from '../components/NavBar/NavBar'
-
 import Page from '../components/Page/Page'
+import '../css/custom-css.css'
+import theme from '../css/theme'
 
 const Layout = ({ children, data }) => (
   <ThemeProvider theme={theme}>

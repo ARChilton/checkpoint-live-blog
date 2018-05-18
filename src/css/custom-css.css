@@ -5,6 +5,10 @@ html {
     text-size-adjust: 100%;
 }
 
+body{
+    margin:0px;
+}
+
 a {
   color: #FF9100;
 }
